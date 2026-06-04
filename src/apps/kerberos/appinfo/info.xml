@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<info>
+  <id>kerberos</id>
+  <namespace>Kerberos</namespace>
+  <name>Kerberos Integration</name>
+  <summary>Kerberos / SPNEGO based Single Sign-on</summary>
+  <description>This ownCloud app allows authenticating users using SPNEGO authentication</description>
+  <website>https://github.com/owncloud/kerberos/</website>
+  <screenshot>https://raw.githubusercontent.com/owncloud/screenshots/master/Kerberos/kerberos-screenshot.png</screenshot>
+  <bugs>https://github.com/owncloud/kerberos/issues</bugs>
+  <repository type="git">https://github.com/owncloud/kerberos.git</repository>
+  <category>integration</category>
+  <documentation>
+    <admin>https://doc.owncloud.com/server/latest/admin_manual/enterprise/authentication/kerberos.html</admin>
+  </documentation>
+  <licence>OCL</licence>
+  <author>ownCloud GmbH</author>
+  <version>1.0.2</version>
+  <dependencies>
+    <owncloud min-version="10.11" max-version="10"/>
+    <lib>krb5</lib>>
+  </dependencies>
+  <auth-modules>
+    <module>OCA\Kerberos\AuthModule</module>
+  </auth-modules>
+  <types>
+    <authentication/>
+  </types>
+</info>

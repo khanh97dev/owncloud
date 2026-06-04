@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<info>
+	<id>templateeditor</id>
+	<name>Mail Template Editor</name>
+	<summary>Customize mail templates easily</summary>
+	<description>Mail Template Editor is discontinued. Use theming to customize mail templates.</description>
+	<licence>AGPL</licence>
+	<author>Jörn Dreyer, Viktar Dubiniuk</author>
+	<version>0.5.0</version>
+	<category>customization</category>
+	<dependencies>
+		<owncloud min-version="8.2" max-version="11.99" />
+	</dependencies>
+	<screenshot>https://raw.githubusercontent.com/owncloud/screenshots/master/templateeditor/template_editor.jpg</screenshot>
+	<website>https://github.com/owncloud/templateeditor/</website>
+	<bugs>https://github.com/owncloud/templateeditor/issues</bugs>
+	<repository type="git">http://github.com/owncloud/templateeditor.git</repository>
+</info>

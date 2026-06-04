@@ -1,0 +1,16 @@
+OC.L10N.register(
+    "federation",
+    {
+    "Server added to the list of trusted ownClouds" : "Máy chủ đã được thêm vào danh sách các máy chủ ownCloud tin tưởng",
+    "Server is already in the list of trusted servers." : "Máy chủ sẵn sàng trong danh sách các máy chủ tin tưởng",
+    "No ownCloud server found" : "Không tìm thấy máy chủ ownCloud nào cả",
+    "Could not add server" : "Không thể thêm máy chủ",
+    "Trusted ownCloud Servers" : "Máy chủ ownCloud tin tưởng",
+    "+ Add ownCloud server" : "Thêm máy chủ ownCloud",
+    "ownCloud Server" : "Máy chủ ownCloud",
+    "Add" : "Thêm",
+    "Federation" : "Liên kết",
+    "ownCloud Federation allows you to connect with other trusted ownClouds to exchange the user directory. For example this will be used to auto-complete external users for federated sharing." : "ownCloud Federation cho phép bạn kết nối với các ownCloud tin tưởng khác để trao đổi danh mục người dùng. Ví dụ, điều này sẽ được sử dụng để tự động hoàn thành người dùng bên ngoài cho việc chia sẻ liên kết.",
+    "Add server automatically once a federated share was created successfully" : "Tự động thêm máy chủ khi chia sẻ liên kết được tạo thành công"
+},
+"nplurals=1; plural=0;");

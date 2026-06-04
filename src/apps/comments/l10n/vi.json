@@ -1,0 +1,24 @@
+{ "translations": {
+    "Type in a new comment..." : "Nhập bình luận mới...",
+    "Delete comment" : "Xóa bình luận",
+    "Post" : "Đăng",
+    "Cancel" : "Hủy",
+    "Edit comment" : "Chỉnh sửa bình luận",
+    "[Deleted user]" : "[Người dùng đã bị xóa]",
+    "Comments" : "Bình luận",
+    "No other comments available" : "Không có bình luận nào khác",
+    "More comments..." : "Thêm bình luận...",
+    "Save" : "Lưu",
+    "Allowed characters {count} of {max}" : "Ký tự được phép {count} trong {max}",
+    "Error occurred while retrieving comment with id {id}" : "Đã xảy ra lỗi khi lấy bình luận có id {id}",
+    "Error occurred while updating comment with id {id}" : "Đã xảy ra lỗi khi cập nhật bình luận có id {id}",
+    "Error occurred while posting comment" : "Đã xảy ra lỗi khi đăng bình luận",
+    "{count} unread comments" : "{count} bình luận chưa đọc",
+    "Comment" : "Bình luận",
+    "<strong>Comments</strong> for files <em>(always listed in stream)</em>" : "<strong>Bình luận</strong> cho các tệp <em>(luôn hiển thị trong luồng)</em>",
+    "You commented" : "Bạn đã bình luận",
+    "%1$s commented" : "%1$s đã bình luận",
+    "You commented on %2$s" : "Bạn đã bình luận về %2$s",
+    "%1$s commented on %2$s" : "%1$s đã bình luận về %2$s"
+},"pluralForm" :"nplurals=1; plural=0;"
+}

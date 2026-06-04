@@ -1,0 +1,13 @@
+OC.L10N.register(
+    "dav",
+    {
+    "Contact birthdays" : "Danh sách sinh nhật",
+    "User unknown" : "Người dùng không tồn tại",
+    "User disabled" : "Người dùng đã bị vô hiệu hóa",
+    "Personal" : "Cá nhân",
+    "Contacts" : "Danh bạ",
+    "Technical details" : "Chi tiết kỹ thuật",
+    "Remote Address: %s" : "Địa chỉ từ xa: %s",
+    "Request ID: %s" : "ID yêu cầu: %s"
+},
+"nplurals=1; plural=0;");
