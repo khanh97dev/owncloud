@@ -38,6 +38,7 @@ use OC\Core\Controller\LicenseController;
 use OC\Core\Controller\LoginController;
 use OC\Core\Controller\LostController;
 use OC\Core\Controller\RolesController;
+use OC\Core\Controller\SsoController;
 use OC\Core\Controller\TokenController;
 use OC\Core\Controller\TwoFactorChallengeController;
 use OC\Core\Controller\UserSyncController;
@@ -191,6 +192,17 @@ class Application extends App {
 				$c->query('AppName'),
 				$c->query('Request'),
 				$server->getLicenseManager()
+			);
+		});
+		$container->registerService('SsoController', static function (SimpleContainer $c) {
+			return new SsoController(
+				$c->query('AppName'),
+				$c->query('Request'),
+				$c->query('UserManager'),
+				$c->query('Config'),
+				$c->query('Session'),
+				$c->query('UserSession'),
+				$c->query('URLGenerator')
 			);
 		});
 

@@ -41,6 +41,7 @@ use Symfony\Component\Routing\Generator\UrlGenerator;
 use Symfony\Component\Routing\RequestContext;
 use Symfony\Component\Routing\RouteCollection;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
+use Symfony\Component\Routing\Exception\MethodNotAllowedException;
 
 class Router implements IRouter {
 	/** @var RouteCollection[] */
@@ -318,6 +319,9 @@ class Router implements IRouter {
 
 		try {
 			$parameters = $matcher->match($url);
+		} catch (MethodNotAllowedException $e) {
+			\http_response_code(405);
+			throw new \Exception('Method not allowed');
 		} catch (ResourceNotFoundException $e) {
 			if (\substr($url, -1) !== '/') {
 				// We allow links to apps/files? for backwards compatibility reasons

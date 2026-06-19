@@ -1,0 +1,78 @@
+// SSO API - File Management (ownCloud)
+// Chọn môi trường (comment/bỏ comment dòng tương ứng):
+# @base_url = http://localhost:9898
+@base_url = https://file.dannsolutions.com
+@client_id = dann_hrm
+@client_secret = abc123xyz
+
+// =============================================================
+// ✅ THÀNH CÔNG - Đăng nhập admin
+// =============================================================
+
+### SSO Login - admin@dannsolutions.com
+// @no-redirect
+GET {{base_url}}/api/sso/login?client_id={{client_id}}&client_secret={{client_secret}}&email=admin@dannsolutions.com
+
+###
+
+### SSO Login - user1@gmail.com
+// @no-redirect
+GET {{base_url}}/api/sso/login?client_id={{client_id}}&client_secret={{client_secret}}&email=user1@gmail.com
+
+###
+
+// =============================================================
+// ❌ LỖI - Client không hợp lệ
+// =============================================================
+
+### Client ID sai → 401 Invalid client credentials
+GET {{base_url}}/api/sso/login?client_id=wrong_client&client_secret={{client_secret}}&email=admin@dannsolutions.com
+
+###
+
+### Client Secret sai → 401 Invalid client credentials
+GET {{base_url}}/api/sso/login?client_id={{client_id}}&client_secret=wrong_secret&email=admin@dannsolutions.com
+
+###
+
+// =============================================================
+// ❌ LỖI - User không tồn tại
+// =============================================================
+
+### Email không tồn tại → 404 User not found
+GET {{base_url}}/api/sso/login?client_id={{client_id}}&client_secret={{client_secret}}&email=khongtontai@dannsolutions.com
+
+###
+
+// =============================================================
+// ❌ LỖI - Thiếu tham số
+// =============================================================
+
+### Thiếu email → 400 Missing required parameters
+GET {{base_url}}/api/sso/login?client_id={{client_id}}&client_secret={{client_secret}}
+
+###
+
+### Thiếu client_secret → 400 Missing required parameters
+GET {{base_url}}/api/sso/login?client_id={{client_id}}&email=admin@dannsolutions.com
+
+###
+
+### Thiếu client_id → 400 Missing required parameters
+GET {{base_url}}/api/sso/login?client_secret={{client_secret}}&email=admin@dannsolutions.com
+
+###
+
+### Không có tham số nào → 400 Missing required parameters
+GET {{base_url}}/api/sso/login
+
+###
+
+// =============================================================
+// 🌐 PRODUCTION
+// =============================================================
+
+### SSO Login Production - admin
+GET https://file.dannsolutions.com/api/sso/login?client_id={{client_id}}&client_secret={{client_secret}}&email=admin@dannsolutions.com
+
+###

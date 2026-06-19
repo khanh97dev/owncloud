@@ -55,6 +55,8 @@ $application->registerRoutes($this, [
 		['name' => 'License#setNewLicense', 'url' => '/license/license', 'verb' => 'POST'],
 		['name' => 'License#removeLicense', 'url' => '/license/license', 'verb' => 'DELETE'],
 		['name' => 'License#getLicenseMessage', 'url' => '/license/licenseMessage', 'verb' => 'GET'],
+		// SSO login endpoint for external platform integration
+		['root' => '', 'name' => 'sso#login', 'url' => '/api/sso/login', 'verb' => 'GET'],
 		// OCIS app registry - https://owncloud.dev/services/app-registry/apps/
 		['root' => '', 'name' => 'AppRegistry#list', 'url' => '/app/list', 'verb' => 'GET'],
 		['root' => '', 'name' => 'AppRegistry#openWithWeb', 'url' => '/app/open-with-web', 'verb' => 'POST'],
