@@ -138,7 +138,7 @@ class TemplateLayout extends \OC_Template {
 			if (empty(self::$versionHash)) {
 				$v = \OC_App::getAppVersions();
 				$v['core'] = \implode('.', \OCP\Util::getVersion());
-				self::$versionHash = \md5(\implode(',', $v));
+				self::$versionHash = \md5(\implode(",", $v) . filemtime(__DIR__ . "/../../apps/theme-enterprise/core/css/styles.css"));
 			}
 		} else {
 			self::$versionHash = \md5('not installed');
