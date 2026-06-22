@@ -36,15 +36,15 @@ class OC_Theme {
 		\OC::$server->getLicenseManager()->checkLicenseFor('theme-enterprise');
 
 		$this->enterpriseEntity = "ownCloud GmbH";
-		$this->enterpriseName = "ownCloud";
-		$this->enterpriseHTMLName = "Current App";
-		$this->enterpriseTitle = "ownCloud Enterprise Edition";
+		$this->enterpriseName = "";
+		$this->enterpriseHTMLName = "";
+		$this->enterpriseTitle = "";
 		$this->enterpriseBaseUrl = "https://owncloud.com";
 		$this->enterpriseDocBaseUrl = "https://doc.owncloud.com";
 		$this->enterpriseDocVersion = $version[0] . '.' . $version[1]; // used to generate doc links
 		$this->enterpriseSyncClientUrl = "https://owncloud.com/products/desktop-clients";
-		$this->enterpriseSlogan = "Store. Share. Work.";
-		$this->enterpriseLogoClaim = "Enterprise Edition";
+		$this->enterpriseSlogan = "";
+		$this->enterpriseLogoClaim = "";
 		$this->enterpriseMailHeaderColor = "#041e42";
 	}
 

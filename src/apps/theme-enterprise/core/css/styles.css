@@ -287,3 +287,58 @@ button.primary:focus,
         z-index: -1;
     }
 }
+
+/* Custom overrides */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body, input, button, select, textarea, #header, .header-appname, #navigation, #app-navigation, #app-content {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Hide OwnCloud logo on login page */
+#body-login #header .logo {
+    background-image: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+}
+
+/* Hide logo claim / tagline */
+#body-login #header #logo-claim {
+    display: none !important;
+}
+
+/* Hide logo icon in header nav */
+#header #owncloud .logo-icon {
+    background-image: none !important;
+}
+
+/* Hide owncloud text/logo in header */
+.header-appname-container {
+    display: none !important;
+}
+
+/* Text logo replacing ownCloud icon */
+#owncloud .logo-text {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-indent: 0;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    line-height: 50px;
+    padding: 0 12px;
+    text-transform: none;
+}
+
+#header #owncloud {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Remove old logo-icon background from this element */
+#header #owncloud .logo-text {
+    background-image: none !important;
+}

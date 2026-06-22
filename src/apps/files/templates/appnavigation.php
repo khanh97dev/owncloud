@@ -22,8 +22,8 @@
 				<input class="checkbox" id="showhiddenfilesToggle" checked="checked" type="checkbox">
 				<label for="showhiddenfilesToggle"><?php p($l->t('Show hidden files')); ?></label>
 			</div>
-			<label for="webdavurl"><?php p($l->t('WebDAV'));?></label>
-			<input id="webdavurl" type="text" readonly="readonly" value="<?php p($_['webdavUrl']); ?>" />
+			
+			
 		</div>
 	</div>
 </div>
