@@ -342,3 +342,18 @@ body, input, button, select, textarea, #header, .header-appname, #navigation, #a
 #header #owncloud .logo-text {
     background-image: none !important;
 }
+
+/* Force white text on domain logo */
+#header #owncloud h1.logo-text,
+#header a#owncloud h1.logo-text,
+h1.logo-text {
+    color: #ffffff !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    text-indent: 0 !important;
+    background-image: none !important;
+    line-height: 50px !important;
+    padding: 0 12px !important;
+    white-space: nowrap !important;
+}
