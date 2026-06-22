@@ -357,3 +357,13 @@ h1.logo-text {
     padding: 0 12px !important;
     white-space: nowrap !important;
 }
+
+/* Override user agent stylesheet a { color: #000 } */
+a#owncloud,
+a#owncloud:link,
+a#owncloud:visited,
+a#owncloud:hover,
+a#owncloud:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
